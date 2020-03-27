@@ -1,5 +1,6 @@
 load data
-infile 'c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\virus.csv'
+CHARACTERSET UTF8
+infile 'c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\GRAND_VIRUS_EPICENTER.csv'
 into table TMP
 fields terminated by ";" optionally enclosed by '"'
 trailing nullcols

@@ -1,2 +1,2 @@
-sqlldr practi2/abc123@xe control=c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\loader.ctl data=c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\virus.csv log=c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\registrolog.log
+sqlldr practi2/abc123@xe control=c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\[BD1]ArchivoControl.ctl data=c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\GRAND_VIRUS_EPICENTER.csv log=c:\users\wrm\desktop\[BD1]PRACTICA2_200915518\registrolog.log
 

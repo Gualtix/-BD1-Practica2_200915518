@@ -13,9 +13,11 @@ DROP TABLE HOSPITAL;
 /********************************************************************************************************/
 CREATE TABLE HOSPITAL(
     id        NUMBER PRIMARY KEY,
-    nombre    VARCHAR2(250) NOT NULL UNIQUE,
+    nombre    VARCHAR2(250) NOT NULL,
     direccion VARCHAR2(250) NOT NULL
 );
+
+ALTER TABLE HOSPITAL ADD CONSTRAINT HOSU UNIQUE (nombre,direccion);
 
 CREATE TABLE VICTIMA(
     id                     NUMBER PRIMARY KEY,
@@ -100,5 +102,42 @@ CREATE TABLE ASIGNACION_TRATAMIENTO(
 
 ALTER TABLE ASIGNACION_TRATAMIENTO ADD FOREIGN KEY (fk_victima)     REFERENCES VICTIMA(id);
 ALTER TABLE ASIGNACION_TRATAMIENTO ADD FOREIGN KEY (fk_tratamiento) REFERENCES TRATAMIENTO(id);
-
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/*******************************************************************************************************************************************/
+/********************************************************************************************************/
+CREATE TABLE TMP(
+    NOMBRE_VICTIMA           VARCHAR2(250) NULL,
+    APELLIDO_VICTIMA         VARCHAR2(250) NULL,
+    DIRECCION_VICTIMA        VARCHAR2(250) NULL,
+    FECHA_PRIMERA_SOSPECHA   VARCHAR2(250) NULL,
+    FECHA_CONFIRMACION       VARCHAR2(250) NULL,
+    FECHA_MUERTE             VARCHAR2(250) NULL,
+    ESTADO_VICTIMA           VARCHAR2(250) NULL,
+    NOMBRE_ASOCIADO          VARCHAR2(250) NULL,
+    APELLIDO_ASOCIADO        VARCHAR2(250) NULL,
+    FECHA_CONOCIO            VARCHAR2(250) NULL,
+    CONTACTO_FISICO          VARCHAR2(250) NULL,
+    FECHA_INICIO_CONTACTO    VARCHAR2(250) NULL,
+    FECHA_FIN_CONTACTO       VARCHAR2(250) NULL,
+    NOMBRE_HOSPITAL          VARCHAR2(250) NULL,
+    DIRECCION_HOSPITAL       VARCHAR2(250) NULL,
+    UBICACION_VICTIMA        VARCHAR2(250) NULL,
+    FECHA_LLEGADA            VARCHAR2(250) NULL,
+    FECHA_RETIRO             VARCHAR2(250) NULL,
+    TRATAMIENTO              VARCHAR2(250) NULL,
+    EFECTIVIDAD              NUMBER NULL,
+    FECHA_INICIO_TRATAMIENTO VARCHAR2(250) NULL,
+    FECHA_FIN_TRATAMIENTO    VARCHAR2(250) NULL,
+    EFECTIVIDAD_EN_VICTIMA   NUMBER NULL
+);
 /********************************************************************************************************/
