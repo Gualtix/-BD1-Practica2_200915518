@@ -140,4 +140,8 @@ CREATE TABLE TMP(
     FECHA_FIN_TRATAMIENTO    VARCHAR2(250) NULL,
     EFECTIVIDAD_EN_VICTIMA   NUMBER NULL
 );
+
+--DROP TABLE TMP;
+--SELECT COUNT(*) FROM TMP;
+
 /********************************************************************************************************/
